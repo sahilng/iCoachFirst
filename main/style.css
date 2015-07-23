@@ -822,8 +822,8 @@ img {
 .parallax-bg-overlay {
   position: absolute;
   z-index: 3;
-  left: 25%;
-  width: 75%;
+  left: 10%;
+  width: 100%;
 }
 @media (max-width: 991px) {
   .parallax-bg-overlay {
