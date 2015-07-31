@@ -177,6 +177,10 @@ function menuRework(){
 function accordionMy(){
 	$(".collapse").on('show.bs.collapse', function() {
 		var printt = $(this).parent().index();
+//my own sahil custom
+		changeServices(printt);
+		console.log(printt);
+//end custom
 		$(".acc-slide img").removeClass("active");
 		$(".acc-slide img").eq(printt).addClass("active");
 		$(".panel").find(".panel-heading h4").css("color", "#222");
@@ -186,6 +190,37 @@ function accordionMy(){
 		//console.log(printt);
 	});
 }
+
+//This is my own SAHIL custom
+
+function changeServices(i){
+	$(".activeService").css("display","none");
+	var selectedModule = "";
+	switch (i) {
+		case 0:
+			selectedModule = "coach";
+			break;
+		case 1:
+			selectedModule = "train";
+			break;
+		case 2:
+			selectedModule = "assess";
+			break;
+		case 3:
+			selectedModule = "meetings";
+			break;
+		case 4:
+			selectedModule = "leadership";
+			break;
+	}
+	var serviceToActive = "#"+selectedModule+"Services";
+	$(serviceToActive).addClass("activeService");
+	$(serviceToActive).css("display","inline");
+}
+
+
+
+//End custom
 
 $(document).ready(function(){
 	winScr = $(window).scrollTop();
