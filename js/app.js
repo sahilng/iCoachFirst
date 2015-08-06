@@ -218,7 +218,33 @@ function changeServices(i){
 	$(serviceToActive).css("display","inline");
 }
 
+var images = ["images/vertCoach.png","images/vertAssess.png","images/vertTrain.png", "images/vertMeetings.png", "images/vertLeadership.png"];
+var text = ["COACHING","ASSESSING","TRAINING","MEETINGS","LEADERSHIP"];
+var classes = ["coachText", "assessText", "trainText", "meetingsText", "leadershipText"];
+var $img = $("#rotatingImage"), i = 0, speed = 200;
+var $rotatingText = $("#rotatingText");
 
+function rotateImages(){
+    // $img.fadeOut(10, function() {
+    // 	$img.attr("src",images[i]);
+    // })
+    // .fadeIn(10);
+    $img.attr("src",images[i]);
+    $rotatingText.html(text[i]);
+    if(i!==0){
+    	$rotatingText.removeClass(classes[i]);
+    	$rotatingText.addClass(classes[i+1]);
+    }
+    if(i == 4){
+    	i = 0;
+    }
+    else{
+    	i++;
+    }
+    setTimeout(rotateImages, 3000);
+}
+
+rotateImages();
 
 //End custom
 

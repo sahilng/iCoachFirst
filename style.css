@@ -21,9 +21,26 @@ Assigned to: Shindiri Studio
 11. Footer / footer
 -------------------------------------------------------------------*/
 /*Custom Sahil Styles*/
+/*Rotating Text/Images for Home Slide*/
+.coachText{
+  color: yellow;
+}
 
+.trainText{
+  color:blue;
+}
 
+.assessText{
+  color:red;
+}
 
+.meetingsText{
+  color:green;
+}
+
+.leadershipText{
+  color:orange;
+}
 
 /*End Custom*/
 .mixin-image {
