@@ -885,7 +885,7 @@ img {
 }
 .header-text {
   position: absolute;
-  top: 40%;
+  top: 10%;
   width: 90%;
   margin: 0 auto;
   z-index: 4;

@@ -86,7 +86,7 @@ function parallaxFunction(){
 		$(".parallax-overlay").css({top : (h/3+h/9)+(winScr/2.5)});
 		$(".parallax-bg-overlay").css({top: (h/4)+(winScr/1.2)});
 		$(".video-phone-holder").css({top : (h/2)-120});
-		$(".header-text").css({top : (h/2)-140});
+		$(".header-text").css({top : (h/2)-180});
 	}				
 };
 
