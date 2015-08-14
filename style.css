@@ -886,7 +886,7 @@ img {
 .header-text {
   position: absolute;
   top: 10%;
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
   z-index: 4;
 }
@@ -1005,7 +1005,7 @@ img {
 .right-img-2 {
   position: absolute;
   left: 20%;
-  width: 55%;
+  width: 70%;
   animation-delay: .8s;
   -webkit-animation-delay: .8s;
   -o-animation-delay: .8s;
