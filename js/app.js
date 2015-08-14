@@ -218,7 +218,7 @@ function changeServices(i){
 	$(serviceToActive).css("display","inline");
 }
 
-var flasherIds = ["coachingFlash", "trainingFlash", "assessmentsFlash", "meetingsFlash", "leadershipFlash"];
+var flasherIds = ["coachingFlash", "trainingFlash", "assessmentsFlash", "certificationsFlash", "collaborationFlash", "meetingsFlash", "leadershipFlash"];
 var i = 0;
 function revealText(){
     // $img.fadeOut(10, function() {
@@ -226,7 +226,11 @@ function revealText(){
     // })
     // .fadeIn(10);
     $("#"+flasherIds[i]).css("display","inline");
-    if(i < 4){
+    if(i == 0){
+    	setTimeout(revealText, 2000);
+    	i++;
+    }
+    else if(i < 6){
 	    setTimeout(revealText, 1000);
 		i++;
 	}

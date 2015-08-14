@@ -24,7 +24,7 @@ Assigned to: Shindiri Studio
 
 .flasher{
   margin-right:5px;
-  font-size: 22px;
+  font-size: 25px;
   display: none;
 }
 
@@ -37,6 +37,14 @@ Assigned to: Shindiri Studio
 }
 
 #assessmentsFlash{
+  color:white;
+}
+
+#certificationsFlash{
+  color:orange;
+}
+
+#collaborationFlash{
   color:white;
 }
 
