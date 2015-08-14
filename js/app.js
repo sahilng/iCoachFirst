@@ -234,6 +234,39 @@ function revealText(){
 
 revealText();
 
+//ajax form for demo request
+$("#demoFormButton").click(function (){
+	var url = "php/demo.php";
+
+	var name = $("#demoName").val();
+	var email = $("#demoEmail").val();
+
+	if(name === "" || email === ""){
+		alert("Please enter both a name and an email");
+	}
+	else if(!validateEmail(email)){
+		alert("Please enter a proper email");
+	}
+	else{
+    $("#demoFormButton").css("background-color","green");
+	$.ajax({
+           type: "POST",
+           url: url,
+           data: "name="+name+"&email="+email, // serializes the form's elements.
+           success: function(data)
+           {
+           		console.log(data);
+           }
+         });
+	}
+
+});
+
+function validateEmail(email) {
+    var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+    return re.test(email);
+}
+
 //End custom
 
 $(document).ready(function(){

@@ -1356,8 +1356,7 @@ img {
   width: 100%;
   padding-left: 12px;
   border: none;
-  border-bottom-left-radius: 10px;
-  border-top-left-radius: 10px;
+  border-radius: 10px;
   font-size: 16px;
   font-weight: 200;
   color: #808080;
@@ -1378,8 +1377,7 @@ img {
   font-weight: 700;
   background-color: #3b97d3;
   border: none;
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
+  border-radius: 10px;
 }
 @media (max-width: 767px) {
   .btn-sub {
@@ -1388,6 +1386,7 @@ img {
 }
 .subsc-input {
   padding-right: 0;
+  margin-bottom:20px;
 }
 @media (max-width: 767px) {
   .subsc-input {
@@ -1395,11 +1394,11 @@ img {
   }
 }
 .subsc-button {
-  padding-left: 0;
+  padding-right: 0;
 }
 @media (max-width: 767px) {
   .subsc-button {
-    padding-left: 15px;
+    padding-right: 15px;
     margin-top: 20px;
   }
 }
