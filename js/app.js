@@ -207,9 +207,12 @@ function changeServices(i){
 			selectedModule = "assess";
 			break;
 		case 3:
-			selectedModule = "meetings";
+			selectedModule = "connect";
 			break;
 		case 4:
+			selectedModule = "meetings";
+			break;
+		case 5:
 			selectedModule = "leadership";
 			break;
 	}
