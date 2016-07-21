@@ -237,6 +237,9 @@ function revealText(){
 	    setTimeout(revealText, 1000);
 		i++;
 	}
+	else if(i == 6){
+		$("#oneappforthat").show();
+	}
 }
 
 revealText();
