@@ -263,10 +263,11 @@ $("#demoFormButton").click(function (){
            success: function(data)
            {
            		console.log(data);
-           		alert("Thank you for requesting an iCoachFirst demo.\nWe'll be in touch soon.")
+           		alert("Thank you for requesting an iCoachFirst demo.\nWe'll be in touch soon.")      		
+           		$("html, body").animate({ scrollTop: 0 }, "slow");
            		$('#demoName').val('');
            		$('#demoEmail').val('');
-           		$("html, body").animate({ scrollTop: 0 }, "slow");
+           		$("#demoFormButton").css("background-color","#3b97d3");
            }
          });
 	}
