@@ -249,7 +249,7 @@ $("#demoFormButton").click(function (){
 	var email = $("#demoEmail").val();
 
 	if(name === "" || email === ""){
-		alert("Please enter both a name and an email");
+		alert("Please enter both a name and an email address");
 	}
 	else if(!validateEmail(email)){
 		alert("Please enter a proper email");
@@ -263,6 +263,7 @@ $("#demoFormButton").click(function (){
            success: function(data)
            {
            		console.log(data);
+           		alert("Thank you for requesting an iCoachFirst demo.\nWe'll be in touch soon.")
            }
          });
 	}
